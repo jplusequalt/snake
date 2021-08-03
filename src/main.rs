@@ -187,19 +187,15 @@ impl Game {
                     Event::Key(key) => {
                         match key.code {
                             KeyCode::Up => {
-                                println!("Up!");
                                 return Some((self.snake[0].pos.0, self.snake[0].pos.1 - 1));
                             },
                             KeyCode::Left => {
-                                println!("Left!");
                                 return Some((self.snake[0].pos.0 - 1, self.snake[0].pos.1));
                             },
                             KeyCode::Right => {
-                                println!("Right!");
                                 return Some((self.snake[0].pos.0 + 1, self.snake[0].pos.1));
                             },
                             KeyCode::Down => {
-                                println!("Down!");
                                 return Some((self.snake[0].pos.0, self.snake[0].pos.1 + 1));
                             },
                             KeyCode::Esc => {
